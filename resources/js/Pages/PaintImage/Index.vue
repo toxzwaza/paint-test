@@ -1,4 +1,44 @@
 <template>
+    <div id="pret-container" class="py-8">
+        <hr>
+    <div class="flex justify-start items-center ">
+        <div id="pen" class="flex items-center mr-4">
+            <button class="p-2">
+            <i class="fa-solid fa-pen"></i>
+        </button>
+        <div>
+            <input type="color" name="" id="" v-model="penColor">
+        </div>
+
+        </div>
+
+
+
+        <button class="p-2">
+            <i class="fa-solid fa-eraser"></i>
+        </button>
+
+        <!-- 太さ -->
+         <button class="p-2" @click="penWidth = 8">
+            <i class="fa-solid fa-circle text-xl"></i>
+         </button>
+         <button class="p-2" @click="penWidth = 6">
+            <i class="fa-solid fa-circle text-base"></i>
+         </button>
+         <button class="p-2" @click="penWidth = 2">
+            <i class="fa-solid fa-circle text-sm"></i>
+         </button>
+
+
+
+    </div>
+    <hr>
+
+    </div>
+
+
+
+
     <div class="mb-16">
 
         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @click="setMode('drawing')">ペン</button>
